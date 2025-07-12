@@ -16,44 +16,13 @@ const Navbar = () => {
 
   const downloadCV = () => {
     // Create a simple CV content
-    const cvContent = `
-SAHIL BHURE
-Software Engineer & Unity Developer
-
-Contact Information:
-Email: Sahilbhure101@gmail.com
-Phone: 8975612785
-GitHub: https://github.com/SahilBhure
-LinkedIn: https://linkedin.com/in/sahil-bhure-369657198
-
-EXPERIENCE:
-Software Engineer – Ciklum, Pune (Jun 2024 - Present)
-- Developed and optimized Unity-based games for mobile and desktop platforms
-- Developed and maintained interactive 2D and 3D games using Unity Engine
-- Collaborated with game designers, artists, and backend developers
-
-Unity Developer Intern – Infogen Labs, Pune (Aug 2023 - Nov 2023)
-- Assisted in developing gameplay systems and UI components in Unity
-- Gained experience with Unity Animator, Prefabs, and Particle Systems
-- Worked under senior developers to debug and optimize code
-
-EDUCATION:
-Bachelor of Technology - Computer Engineering
-Rashtrasant Tukdoji Maharaj Nagpur University, Nagpur (Aug 2021 - June 2024)
-
-ABOUT:
-Java Backend Developer with hands-on experience building scalable RESTful APIs and backend services using Java, Spring Boot, and Docker. Additionally skilled in Unity-based 2D/3D game development. Strong grasp of OOP principles, debugging, testing, and agile practices.
-    `;
-
-    const blob = new Blob([cvContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Sahil_Bhure_CV.txt';
+    a.href = "https://drive.google.com/file/d/1Bcrb5MeouMKTjYAgfgjC_Y8xvHdi0nBm/view?usp=drive_link";
+    a.download = 'Sahil_Bhure_CV';
+    a.target = "_blank";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    URL.revokeObjectURL(url);
   };
 
   return (

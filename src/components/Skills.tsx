@@ -16,16 +16,6 @@ const Skills = () => {
           icon: '🔷',
           color: 'from-purple-500 to-blue-500'
         },
-        { 
-          name: 'JavaScript', 
-          icon: '🟨',
-          color: 'from-yellow-400 to-orange-400'
-        },
-        { 
-          name: 'Python', 
-          icon: '🐍',
-          color: 'from-green-400 to-blue-400'
-        },
       ]
     },
     {
@@ -95,11 +85,6 @@ const Skills = () => {
           name: 'Testing', 
           icon: '🧪',
           color: 'from-green-500 to-teal-500'
-        },
-        { 
-          name: 'OOP', 
-          icon: '🏗️',
-          color: 'from-purple-500 to-blue-500'
         },
       ]
     }
@@ -265,14 +250,8 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              { name: 'MongoDB', icon: '🍃', achievement: 'Database Master' },
               { name: 'MySQL', icon: '🐬', achievement: 'SQL Wizard' },
               { name: 'React', icon: '⚛️', achievement: 'Frontend Hero' },
-              { name: 'Node.js', icon: '🟢', achievement: 'Backend Warrior' },
-              { name: 'Unity Animator', icon: '🎭', achievement: 'Animation Expert' },
-              { name: 'Particle Systems', icon: '✨', achievement: 'Effects Master' },
-              { name: 'Prefabs', icon: '🧩', achievement: 'Component Pro' },
-              { name: 'JSON/XML', icon: '📄', achievement: 'Data Parser' },
             ].map((tech, index) => (
               <motion.div
                 key={tech.name}
